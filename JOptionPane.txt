@@ -1,0 +1,53 @@
+1. INFORMATION MESSAGE
+            JOptionPane.showMessageDialog(this, "Login Successful");
+				OR
+            JOptionPane.showMessageDialog(null, "Login Successful");
+			PREFERABLY
+           JOptionPane.showMessageDialog(this, "Wrong Details", "Error Message Dialogue", JOptionPane.INFORMATION_MESSAGE);
+
+DIFFERENCE BETWEEN this AND null: this -> Appear on center of frame, null -> Appears on center of PC monitor
+
+3. ERROR MESSAGE
+        JOptionPane.showMessageDialog(this, "Wrong Details", "Error Message Dialogue", JOptionPane.ERROR_MESSAGE);
+
+3. PLAIN MESSAGE
+        JOptionPane.showMessageDialog(this, "Wrong Details", "Error Message Dialogue", JOptionPane.PLAIN_MESSAGE);
+
+4. QUESTION MESSAGE
+        JOptionPane.showMessageDialog(this, "Wrong Details", "Error Message Dialogue", JOptionPane.QUESTION_MESSAGE);
+
+5. WARNING MESSAGE
+        JOptionPane.showMessageDialog(this, "Wrong Details", "Error Message Dialogue", JOptionPane.WARNING_MESSAGE);
+
+6. INPUT DIALOGUE
+        String s = JOptionPane.showInputDialog(this, "Enter name", "HINT");
+        int age = Integer.parseInt(JOptionPane.showInputDialog(this, "Enter name", "HINT"));
+
+2. YES_N0_CANCEL COMFIRM DIALOGUE
+
+        int x = JOptionPane.showConfirmDialog(this, "Is it true", "TITLE",JOptionPane.YES_NO_CANCEL_OPTION);
+
+        if(x==0){
+            System.out.println("You clicked yes");
+        }else if(x==1){
+            System.out.println("You clicked No");
+        }else if(x==2){
+            System.out.println("You clicked Cancel");
+        }
+
+
+4. OKAY_CANCEL COMFIRM DIALOGUE
+        int x = JOptionPane.showConfirmDialog(this, "Sure you want to exit?", "EXIT", JOptionPane.OK_CANCEL_OPTION);
+        if(x==0){
+            System.out.println("You clicked yes");
+        }else if(x==2){
+            System.out.println("You clicked No");
+        }
+
+5. OKAY DIALOGUE 
+        int x = JOptionPane.showConfirmDialog(this, "Is it true", "TITLE",JOptionPane.CLOSED_OPTION);
+
+        if(x==0){
+            System.out.println("You clicked yes");
+        }
+
